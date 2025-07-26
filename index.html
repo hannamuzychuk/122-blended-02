@@ -5,77 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
     <link rel="icon" type="images/srg+html" href="./images/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <a href="./index.html"
-        ><img
-          src="./images/logo.svg"
-          alt="logo"
-          width="40"
-          height="36"
-        />Product</a
-      >
-      <nav>
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customer.html">Customers</a></li>
-          <li><a href="">Resources</a></li>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo logo" href="./index.html"
+          ><img
+            src="./images/logo.svg"
+            alt="logo"
+            width="40"
+            height="36"
+          />Product</a
+        >
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list">
+              <a class="header-nav-link current" href="./index.html">Product</a>
+            </li>
+            <li class="header-nav-list">
+              <a class="header-nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="header-nav-list">
+              <a class="header-nav-link" href="./customer.html">Customers</a>
+            </li>
+            <li class="header-nav-list">
+              <a class="header-nav-link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-btn-list">
+          <li class="header-btn-item">
+            <button class="header-btn" type="button">Sign In</button>
+          </li>
+          <li class="header-btn-item">
+            <button class="header-btn" type="button">Sign Up</button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--START-->
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul>
-          <li><button type="button">Get started</button></li>
-          <li><button type="button">Watch the Video</button></li>
-        </ul>
-        <img
-          src="./images/hero-img.svg"
-          alt="hero-img"
-          width="610"
-          height="555"
-        />
+      <section class="hero">
+        <div class="container hero-container">
+          <div>
+            <h1>Work at the speed of thought</h1>
+            <p>
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul>
+              <li><button type="button">Get started</button></li>
+              <li><button type="button">Watch the Video</button></li>
+            </ul>
+          </div>
+          <img
+            src="./images/hero-img.svg"
+            alt="hero-img"
+            width="610"
+            height="555"
+          />
+        </div>
       </section>
 
       <!--BENEFITS-->
-      <section>
-        <h2>Product was Built Specifically for You</h2>
-        <ul>
-          <li>
-            <img src="./images/benefits/icon-1.svg" alt="icon-1" />
-            <h3>First click tests</h3>
-            <p>While most people enjoy casino gambling,</p>
-          </li>
-          <li>
-            <img src="./images/benefits/icon-2.svg" alt="icon-2" width="54" />
-            <h3>Design surveys</h3>
-            <p>Sports betting, lottery and bingo playing for the fun</p>
-          </li>
-          <li>
-            <img src="./images/benefits/icon-3.svg" alt="icon-3" width="54" />
-            <h3>Preference tests</h3>
-            <p>The Myspace page defines the individual.</p>
-          </li>
-          <li>
-            <img src="./images/benefits/icon-4.svg" alt="icon-4" width="54" />
-            <h3>Five second tests</h3>
-            <p>Personal choices and the overall personality of the person.</p>
-          </li>
-        </ul>
-        <button type="button">sign up now</button>
+      <section class="benefits">
+        <div class="container benefits-container">
+          <h2 class="benefits-title">Product was Built Specifically for You</h2>
+          <ul class="benefits-list">
+            <li class="benefits-list-content">
+              <img src="./images/benefits/icon-1.svg" alt="icon-1" />
+              <h3 class="benefits-subtitle">First click tests</h3>
+              <p class="benefits-list-text">
+                While most people enjoy casino gambling,
+              </p>
+            </li>
+            <li class="benefits-list-content">
+              <img src="./images/benefits/icon-2.svg" alt="icon-2" width="54" />
+              <h3 class="benefits-subtitle">Design surveys</h3>
+              <p class="benefits-list-text">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </li>
+            <li class="benefits-list-content">
+              <img src="./images/benefits/icon-3.svg" alt="icon-3" width="54" />
+              <h3 class="benefits-subtitle">Preference tests</h3>
+              <p class="benefits-list-text">
+                The Myspace page defines the individual.
+              </p>
+            </li>
+            <li class="benefits-list-content">
+              <img src="./images/benefits/icon-4.svg" alt="icon-4" width="54" />
+              <h3 class="benefits-subtitle">Five second tests</h3>
+              <p class="benefits-list-text">
+                Personal choices and the overall personality of the person.
+              </p>
+            </li>
+          </ul>
+          <button class="benefits-btn" type="button">sign up now</button>
+        </div>
       </section>
 
       <!--MANAGMENT-->
